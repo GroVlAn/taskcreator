@@ -7,11 +7,11 @@ use application\core\Controller;
 class AccountController extends Controller{
 
 	public function loginAction(){
- echo 'Succes'; 
+        $this->view->render("Страница входа");
 	}
 
 	public function registerAction(){
- echo 'SuccesReg'; 
+        $this->view->render("Страница регистрации");
 	}
 }
 ?>

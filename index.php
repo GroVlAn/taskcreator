@@ -10,7 +10,7 @@ if(file_exists($path))
 }
 });
 session_start();
-require('application/view/header.php');
+
 $Router = new Router();
 $Router->run();
 ?>

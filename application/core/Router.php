@@ -35,22 +35,20 @@ class Router{
 	public function run(){
 		if($this->match()){
 			$path = "application\controllers\\".ucfirst($this->params['controller'])."Controller";
-			var_dump($path);
 			if(class_exists($path)){
-				echo 'succes';
 				$action = "".$this->params['action']."Action";
 				if(method_exists($path,	$action)){
-					$controller = new $path;
+					$controller = new $path($this->params);
 					$controller->$action();
 
 				}else{
-					echo "Метод $action не найден";
+					View::errorCode(404);
 				}
 			}else{
-				echo "Класс $path несуществует";
+				View::errorCode(404);
 			}
 		}else{
-			echo '<h1>404</h1>';
+			View::errorCode(404);
 		}
 	}
 }
