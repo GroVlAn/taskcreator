@@ -43,8 +43,12 @@ class AccountController extends Controller
             } else {
                 unset($_POST['RepeatPassword']);
                 unset($_POST['submit']);
-                $this->model->setAccount($_POST);
-                $this->view->redirect('/');
+                $account = $this->model->setAccount($_POST);
+                if (!empty($account)) {
+                    $this->view->render("Страница регистрации",  $account);
+                } else {
+                    $this->view->redirect('/');
+                }
             }
 
         } else {

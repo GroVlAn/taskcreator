@@ -24,6 +24,10 @@
     src = "/js/main.js" ></script>
     <script src="/js/form.js"></script>
     <script src="/js/register.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
