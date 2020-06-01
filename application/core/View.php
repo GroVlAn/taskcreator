@@ -20,10 +20,11 @@ class View {
 	    extract($vars);
         $path = "application/view/" . $this->path . ".php";
 	    if(file_exists($path)) {
+            require "application/view/layout/" . $this->layout . ".php";
             ob_start();
             require  $path;
             $content = ob_get_contents();
-            require "application/view/layout/" . $this->layout . ".php";
+
         }else{
 	        echo 'Вид не найден';
         }

@@ -7,7 +7,9 @@ use application\core\Model;
 class MainModel extends Model {
 
   public function getTasks(){
-    $this->db;
+
+    $result = $this->db->row('SELECT * FROM task');
+    return ['result'=>$result];
   }
 }
 

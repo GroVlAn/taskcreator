@@ -12,7 +12,11 @@ return [
 	'account/register'=>[
 		'controller'=>'account',
 		'action'=>'register'
-	]
+	],
+    'account/exit'=>[
+        'controller'=>'account',
+        'action'=>'exit'
+    ]
 ]
 
 ?>

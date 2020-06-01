@@ -1,0 +1,21 @@
+input[type=submit]{
+    margin: 18px 19px;
+}
+input[type=text],input[type=email],input[type=password]{
+    margin: 1px 10px;
+    width: 300px;
+}
+p[class=login], p[class=password], p[class=RepeatPassword]{
+    margin: 1px 10px;
+}
+span[class=error]{
+    margin-left: 10px;
+    color: red;
+}
+input[class=exit]{
+    padding: 0;
+    margin: 6px 14px;
+}
+li[class=menu-login]{
+    padding-top: 7px;
+}
