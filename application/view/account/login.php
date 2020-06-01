@@ -12,7 +12,7 @@ if (!$_SESSION['login']):?>
             <span class="error"><?= $error2 ?></span>
         <? endif;?>
         <span class='error' id="error2" style="display: none">Заполните поле</span>
-        <input type="password" name="password" class="form-control" id="login" placeholder="loginPassword"
+        <input type="password" name="password" class="form-control" id="loginPassword" placeholder="Password"
                name="password">
         <? if (!empty($error3)):?>
             <span class="error"><?= $error3 ?></span>

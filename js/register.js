@@ -65,9 +65,9 @@ $(document).ready(function () {
         if(!login&&!password) {
             $('#error1').css('display','block');
             $('#error2').css('display','block');
-        }else if(!login&&password){
+        }else if(!login){
             $('#error1').css('display','block');
-        }else if(login&&!password){
+        }else if(!password){
             $('#error2').css('display','block');
         }
         if(login==''|| password==''){
